@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Prata';
+}
+
+h1,
+h2 {
+    font-size: 2em;
+}
+
+p {
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 156, 156);
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25vw;
+    padding: 0 20px;
+}
+
+.active {
+    display: block;
+    top: 0;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(53, 54, 60);
+    transition: all 2s;
+}
+
+.nav-ul {
+    width: 100%;
+    height: 100%;
+    padding: 10vw 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-ul li {
+    list-style: none;
+}
+
+.burger-close {
+    position: relative;
+    top: 12vw;
+    text-align: right;
+    padding: 0 5vw
+}
+
+
+a {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.heroText {
+    padding-top: 5vw;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 15vw;
+    width: 100%;
+}
+
+.logos img {
+    width: 35%;
+    height: 8vw;
+    padding-bottom: 10px;
+
+}
+
+.source {
+    margin-top: 15vw;
+}
+
+.source-box {
+    width: 100%;
+    margin-bottom: 10vw;
+}
+
+.source-box-img1 {
+    max-width: 100%;
+    height: 50vw;
+    background-image: url("/Developer Portfolio Starter Files/Assets/Spense.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5vw;
+}
+
+.source-box-img2 {
+    max-width: 100%;
+    height: 50vw;
+    background-image: url("/Developer Portfolio Starter Files/Assets/YelpCamp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5vw;
+}
+
+.text {
+    background-color: rgb(53, 54, 60);
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-box:nth-child(1) {
+    margin-bottom: 10vw;
+}
+
+.text-box h2,
+.contact h2,
+.heroText h1,
+.source-box h2 {
+    padding-bottom: 5vw
+}
+
+.text-box p {
+    padding-bottom: 5vw;
+}
+
+#last-p {
+    padding-bottom: 0;
+}
+
+
+.contact {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+.btn {
+    border: none;
+    background-color: gold;
+    padding: 3vw 6vw;
+    color: black;
+    font-size: 1.2em;
+    margin-top: 5vw;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(53, 54, 60);
+    padding: 5vw 10vw;
+}
+
+.social img {
+    padding-right: 2vw
+}
+
+
+@media only screen and (min-width: 481px) {
+
+    h1,
+    h2 {
+        font-size: 2.2em;
+        font-weight: normal;
+    }
+
+    p {
+        line-height: 150%;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header {
+        padding: 0 30px;
+    }
+
+    .burger-close {
+        padding: 0 30px;
+    }
+
+    .logos {
+        justify-content: space-between;
+    }
+
+    .logos img {
+        width: 28%;
+        padding-bottom: 0;
+
+    }
+
+    .contact {
+        padding-right: 20%;
+    }
+
+    footer {
+        padding: 5vw 5vw;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 769px) {
+    .container {
+        padding: 0 100px;
+    }
+
+    .text {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header {
+        height: 15vw;
+        padding: 0 100px;
+    }
+
+
+    nav {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .nav-ul {
+        padding: 0 0;
+        flex-direction: row;
+    }
+
+    a {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .burger-close {
+        display: none;
+
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .btn {
+        padding: 2vw 3vw;
+    }
+
+    .btn-header {
+        margin: 0;
+    }
+
+    .heroText {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+    h1,
+    h2 {
+        font-size: 2.5em;
+    }
+
+
+
+    .logos {
+        flex-wrap: nowrap;
+        padding-top: 10vw;
+    }
+
+    .logos img {
+        width: 15%;
+        padding-bottom: 0;
+
+    }
+
+    .source {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vw;
+    }
+
+    .source-box {
+        width: 45%;
+    }
+
+    .source-box-img1 {
+        height: 25vw;
+        margin-bottom: 0vw;
+    }
+
+    .source-box-img2 {
+        height: 25vw;
+        margin-bottom: 0vw;
+
+    }
+
+    .text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .text-box {
+        width: 45%;
+        height: 100%;
+    }
+
+    .text-box:nth-child(1) {
+        margin-bottom: 0vw;
+    }
+
+    .contact {
+        padding-right: 30%;
+    }
+
+    footer {
+
+        padding: 5vw 100px;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) {
+    p {
+        font-size: 1.4em;
+    }
+
+    a {
+        font-size: 1.4em;
+    }
+
+    .logo {
+        font-size: 1.4em;
+    }
+}
