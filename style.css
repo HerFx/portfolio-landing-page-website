@@ -119,7 +119,7 @@ a {
 .source-box-img1 {
     max-width: 100%;
     height: 50vw;
-    background-image: url("/Developer Portfolio Starter Files/Assets/Spense.png");
+    background-image: url("./Developer Portfolio Starter Files/Assets/Spense.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 5vw;
@@ -128,7 +128,7 @@ a {
 .source-box-img2 {
     max-width: 100%;
     height: 50vw;
-    background-image: url("/Developer Portfolio Starter Files/Assets/YelpCamp.png");
+    background-image: url("./Developer Portfolio Starter Files/Assets/YelpCamp.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 5vw;
